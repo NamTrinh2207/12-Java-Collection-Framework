@@ -34,13 +34,11 @@ public class ProductManager {
 
     //Sửa SP theo id
     public void SetById(String id, Product product) {
-        Product product1;
         for (Product p : products) {
             if (p.getId().equals(id)) {
-                product1 = p;
-                product1.setId(product.getId());
-                product1.setName(product.getName());
-                product1.setPrice(product.getPrice());
+                p.setId(product.getId());
+                p.setName(product.getName());
+                p.setPrice(product.getPrice());
                 break;
             } else {
                 System.out.println("Vui lòng nhâp lại!!!");

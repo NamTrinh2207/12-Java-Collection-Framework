@@ -1,8 +1,6 @@
 package run;
-
 import Product.Product;
 import Product.ProductManager;
-
 import java.util.Scanner;
 
 public class Main {
